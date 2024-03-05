@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.root {
+    max-width: 650px;
+    margin: 0 auto;
+ }
+
+/*===============
+HEADER
+================*/
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:.4em;
+    padding: 1em;
+    color: white;
+    background-color: #F55A5A;
+}
+
+/* .header-img {}*/
+
+.header-title {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/*===============
+MAIN
+================*/
+
+.cards-container {
+    padding: 2em;
+}
+
+.card-container {
+    display: flex;
+    gap: 1.75em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #F5F5F5;
+    height: 28vh;
+    min-height: 250px;
+    min-width: 550px;
+    margin-bottom: 1.5em;
+}
+
+.card-img-container {
+    display: flex;
+    flex: 0 0 30%; 
+}
+
+.card-img-container-point {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+} 
+
+.card-inner-container {
+    padding: 1em 0;    
+    display: flex;
+    flex-direction: column;
+    gap: .55em;
+    justify-content: center;
+}
+
+.card-inner-top-country,
+.card-inner-top-view,
+.card-inner-medium-title,
+.card-inner-medium-date,
+.card-inner-bottom-descr {
+    margin: 0;
+}
+
+.card-inner-top {
+    display: flex;
+    align-items: center;
+    gap:.35em;
+}
+
+.card-inner-top-img {
+    width:10px;
+ }
+ 
+.card-inner-top-country{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .9rem;
+    letter-spacing: 1px;
+ }
+
+.card-inner-top-view {
+    color: #918E9B;
+    text-decoration: underline;
+    font-size: .82rem;
+    margin-left: .85em;
+}
+
+/*.card-inner-medium {
+
+}*/
+
+.card-inner-medium-title {
+    margin-bottom: .7em;
+    font-size: 2rem;
+}
+
+.card-inner-medium-date {
+    font-size: .85rem;
+}
+
+/*.card-inner-bottom {
+    
+}*/    
+
+.card-inner-bottom-descr {
+    color: #2B283A;
+    font-size: .85rem;        
+    line-height: 1.5;
+}
